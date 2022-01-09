@@ -1,16 +1,11 @@
 
-from flask import Flask
+import hashlib
+string="pythonpool.com"
+encoded=string.encode()
+result = hashlib.sha256(encoded)
+print("String : ", end ="")
+print(string)
 
-
-app=Flask(__name__)
-
-@app.route('/')
-def index():
-
-    return 'hello world'
-
-if __name__ == '__main__':
-    app.run()
-
+print(result.hexdigest())
 
 
