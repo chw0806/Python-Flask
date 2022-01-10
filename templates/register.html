@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+<h1>register</h1>
+<form action='{{ url_for('user.register')}}' method="post">
+    <p><input type="text" name="username" placeholder="user name"></p>
+    <p><input type="password" name="password" placeholder="password"></p>
+    <p><input type="password" name="repassword" placeholder="confirm"></p>
+    <p><input type="text" name="phone" placeholder="phone"></p>
+    <p><input type="submit" value="register"></p>
+</form>
+</body>
+</html>
